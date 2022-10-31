@@ -1,7 +1,7 @@
-package com.cell.epub.demo.doc.elements;
+package com.cell.epub.tool.doc.elements;
 
-import com.cell.epub.demo.doc.DocumentWriter;
-import com.cell.epub.demo.util.DocumentUtil;
+import com.cell.epub.tool.doc.DocumentWriter;
+import com.cell.epub.tool.util.DocumentUtil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 

@@ -1,13 +1,13 @@
-package com.cell.epub.demo;
+package com.cell.epub.tool;
 
-import com.cell.epub.demo.doc.BookInfo;
-import com.cell.epub.demo.doc.Chapter;
-import com.cell.epub.demo.doc.Section;
-import com.cell.epub.demo.doc.elements.MetaInfoContainer;
-import com.cell.epub.demo.doc.elements.Mimetype;
-import com.cell.epub.demo.doc.elements.oebps.Content;
-import com.cell.epub.demo.doc.elements.oebps.TocNcx;
-import com.cell.epub.demo.doc.elements.oebps.TocXhtml;
+import com.cell.epub.tool.doc.BookInfo;
+import com.cell.epub.tool.doc.Chapter;
+import com.cell.epub.tool.doc.Section;
+import com.cell.epub.tool.doc.elements.MetaInfoContainer;
+import com.cell.epub.tool.doc.elements.Mimetype;
+import com.cell.epub.tool.doc.elements.oebps.Content;
+import com.cell.epub.tool.doc.elements.oebps.TocNcx;
+import com.cell.epub.tool.doc.elements.oebps.TocXhtml;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;

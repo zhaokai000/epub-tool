@@ -1,9 +1,9 @@
-package com.cell.epub.demo.doc.elements.oebps;
+package com.cell.epub.tool.doc.elements.oebps;
 
-import com.cell.epub.demo.doc.BookInfo;
-import com.cell.epub.demo.doc.Chapter;
-import com.cell.epub.demo.doc.DocumentWriter;
-import com.cell.epub.demo.util.DocumentUtil;
+import com.cell.epub.tool.doc.BookInfo;
+import com.cell.epub.tool.doc.Chapter;
+import com.cell.epub.tool.doc.DocumentWriter;
+import com.cell.epub.tool.util.DocumentUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

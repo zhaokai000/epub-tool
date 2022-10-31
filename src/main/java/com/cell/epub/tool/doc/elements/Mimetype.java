@@ -1,6 +1,6 @@
-package com.cell.epub.demo.doc.elements;
+package com.cell.epub.tool.doc.elements;
 
-import com.cell.epub.demo.doc.DocumentWriter;
+import com.cell.epub.tool.doc.DocumentWriter;
 
 import java.nio.charset.StandardCharsets;
 import java.util.zip.ZipEntry;
