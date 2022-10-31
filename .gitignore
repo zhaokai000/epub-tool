@@ -1,0 +1,11 @@
+# files
+*.iml
+*.ipr
+*.classpath
+
+# directories
+build/
+out/
+target/
+.idea/
+.gradle/

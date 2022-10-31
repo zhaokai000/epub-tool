@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'com.cell'
+version '0.0.1'
+
+repositories {
+    mavenLocal()
+    maven { url "https://maven.aliyun.com/repository/central" }
+    mavenCentral()
+}
+
+dependencies {
+    // commons-lang3
+    implementation("org.apache.commons:commons-lang3:3.9")
+
+    // lombok
+    compileOnly("org.projectlombok:lombok:1.18.20")
+    annotationProcessor("org.projectlombok:lombok:1.18.20")
+
+    // slf4j-api
+    implementation("org.slf4j:slf4j-api:1.7.30")
+
+    testImplementation("junit:junit:4.12")
+}
