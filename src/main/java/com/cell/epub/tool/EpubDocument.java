@@ -10,7 +10,6 @@ import com.cell.epub.tool.doc.elements.oebps.TocNcx;
 import com.cell.epub.tool.doc.elements.oebps.TocXhtml;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
 
 import java.io.FileOutputStream;
 import java.io.OutputStream;
@@ -23,7 +22,6 @@ import java.util.zip.ZipOutputStream;
  * @author zhaokai
  * @since 0.0.1
  */
-@Slf4j
 public class EpubDocument {
 
     /**
@@ -91,13 +89,9 @@ public class EpubDocument {
         Content content = new Content(this.bookInfo, this.chapters);
         content.write(zipOutputStream);
 
-        this.sections.forEach(section -> {
-            try {
-                section.write(zipOutputStream);
-            } catch (Exception e) {
-                log.error(String.format("Write Error!\nFile Name: %s\nTitle: %s", section.getSectionName(), section.getTitle()), e);
-            }
-        });
+        for (Section section : this.sections) {
+            section.write(zipOutputStream);
+        }
 
         zipOutputStream.flush();
         zipOutputStream.close();

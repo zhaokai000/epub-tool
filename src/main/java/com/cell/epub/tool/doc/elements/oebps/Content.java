@@ -4,7 +4,7 @@ import com.cell.epub.tool.doc.BookInfo;
 import com.cell.epub.tool.doc.Chapter;
 import com.cell.epub.tool.doc.DocumentWriter;
 import com.cell.epub.tool.util.DocumentUtil;
-import org.apache.commons.lang3.StringUtils;
+import com.cell.epub.tool.util.StringUtil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -86,7 +86,7 @@ public class Content implements DocumentWriter {
         item.setAttribute("href", href);
         item.setAttribute("id", id);
         item.setAttribute("media-type", mediaType);
-        if (StringUtils.isNotBlank(properties)) {
+        if (StringUtil.isNotBlank(properties)) {
             item.setAttribute("properties", properties);
         }
 

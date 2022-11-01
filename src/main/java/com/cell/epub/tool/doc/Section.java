@@ -1,8 +1,8 @@
 package com.cell.epub.tool.doc;
 
 import com.cell.epub.tool.util.DocumentUtil;
+import com.cell.epub.tool.util.StringUtil;
 import lombok.Getter;
-import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -51,7 +51,7 @@ public class Section implements DocumentWriter {
     }
 
     private void addTitle(Element body) {
-        if (StringUtils.isNotBlank(this.title)) {
+        if (StringUtil.isNotBlank(this.title)) {
             Element h1 = this.document.createElement("h1");
 
             h1.setTextContent(this.title);
